@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html>
+<head>
+
+<title>Calculation of sum using function</title>
+
+</head>
+
+<body>
+
+<button type="button" onclick="myFunction()">Count!</button>
+
+<p id="demo">0</p>
+
+<header>only function  has been used</header>
+<script>
+
+var add = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+
+function myFunction(){
+    document.getElementById("demo").innerHTML = add();
+}
+
+</script>
+</body>
+
+</html>
+
+
+
+
